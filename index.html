@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Invoicer</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript">
+			function showPopup(){
+				$("#popup1").show();
+				return false;
+			}
+			function hidePopup(){
+		  		$("#popup1").hide();
+		  		return false;
+			}
+			function showPopup(){
+				document.getElementById("popup1").style.display = "block";
+				return false;
+			}
+			function hidePopup(){
+				document.getElementById("popup1").style.display = "none";
+				return false;
+			}
+		</script>
+
+</head>
+<body class="container">
+
+<div class="header-bg">
+<div class="popup" id="popup1">
+	<form action="action_page.php" method="post" name="registration">
+	<div id="registration-modal">
+	<a style="float:right; font-size:20px; text-decoration:none;" onclick="hidePopup()" href="#">x</a>
+        		
+        		<h1>Sign up</h1>
+        		
+        		<hr />
+
+        		<div class="full-size">
+					Username<br />
+					<input type="text" name="name" required>
+				</div>
+
+				<div class="full-size">
+					E-mail<br />
+					<input class="full-size" type="email" name="email" required>
+				</div>
+				
+				<div class="half-size half-size_first">
+					Password<br />
+					<input type="password" name="password" required>
+				</div><!--
+
+				--><div class="half-size half-size_second">
+					Confirm password<br />
+					<input type="password" name="confirm-password" required>
+				</div>
+
+				<hr />
+
+				<div class="half-size half-size_first">
+					First name <br />
+					<input type="name" name="f-name">
+				</div><!--
+
+				--><div class="half-size half-size_second">
+				Last name
+				<br />
+				<!--
+				--><input class="half-size" type="name" name="l-name">
+				</div>
+
+				<br />
+
+				<div class="half-size half-size_first radio">
+				Sex
+				<br />
+				<input style="width: 20px;" type="radio" name="gender" value="man" id="man" checked>
+				<label for="male">Male</label>
+				</div><!--
+
+				--><div class="half-size half-size_second radio">
+				<input style="width: 20px;" type="radio" name="gender" id="woman" value="woman">
+				<label for="female">Female</label>
+				</div>
+
+				<br />
+
+				<div class="full-size">
+				City
+				<br />
+				<select class="full-size" name="city">
+				  <option value=""></option>
+				  <option value="odessa">Odessa</option>
+				  <option value="kiev">Kiev</option>
+				  <option value="lviv">Lviv</option>
+				</select>
+				</div>
+
+				<br />
+
+				<div class="full-size">
+				<textarea class="full-size" cols="45" rows="3" name="comment" placeholder="Few words about me"></textarea>
+				</div>
+
+				<hr />
+
+				<input type="checkbox" name="terms"  required>I agree with <a>Terms and conditions</a>
+				<br />
+				<input class="button blue_button" type="submit" value="Register"
+				<br />
+				<input class="button" type="button" value="Clear">
+			
+			</div>
+		</form>
+		</div>
+	<header>
+		<div class="div_logo">
+		<a class="logo" href="/">
+		<img src="images/pics1/logo.png" alt="logo" />Invoicer</a>
+		</div>
+
+		<nav>
+			<ul>
+				<a href="#link_our_features"><li>Our features</li></a>
+				<a href="#"><li>About us</li></a>
+				<a href="#"><li>Faq</li></a>
+				<a href="#"><li>Tutorials</li></a>
+			</ul>
+			<a  class="tranparent-button" href="#" onclick="showPopup()">Sign up</a>
+		</nav>
+	</header>
+	<div class="header-controls">
+	<h1>Easiest invoices</h1>
+	<p>Never been so easy to manage your time and tasks</p>
+		<input type="text" placeholder="Email" /><!--
+		--><a href="#" class="sign-up">Sign up</a>
+		
+		<div>
+		<a href="#link_our_features" id="down"><img class="down" src="images/pics1/down.png" alt="down"/></a>
+		</div>
+
+	</div>
+
+</div><!--
+
+--><p id="link_our_features"></p><!--
+
+--><div class="our_features">
+		<h1 id="our_features">Our features</h1>
+
+
+		<img class="img2" src="images/pics2/table.jpg" />
+		<div class="title"><!-- 
+		--><img class="img1" src="images/pics2/text.png" /><!--
+		--><h2>Easy invoices that save time</h2></div>
+		
+		<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+</div><!--
+
+
+--><div class="integrated_time_tracking"><!--
+
+
+	--><img class="img2" height="500" src="images/pics3/table.jpg"><!--
+	
+	--><div class="left"><!--
+
+			--><div class="title"><!--
+
+				--><img class="img1" src="images/pics3/clocks.png"><!--
+				--><h2>Integrated time tracking</h2>
+
+				</div>
+
+			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p><!--
+--><div style="clear:left"></div></div>
+
+</div><!--
+
+
+
+--><div class="ios">
+		
+		<img class="img2" src="images/pics4/phones.jpg" />
+		<div class="title"><!-- 
+		--><img class="img1" src="images/pics4/phone.png" /><!--
+		--><h2>iOS &amp; Android applications soon...</h2></div>
+		
+		<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+</div><!--
+
+--><div class="reviews">
+	<h1>User's reviews</h1>
+	<img src="images/footer/man.png">
+	<p>"Aery guided us to redesign our web and mobile app. <br />
+	One year later, we're still thrilled with the work."</p>
+	<p class="man">Andrew Brandeis, CEO of Invoicer</p>
+</div>
+
+<div class="footer_sign_up">
+	<div class="sign">
+	
+	<h1>Don't forget to sign up</h1>
+	<input type="text" placeholder="Email" /><!--
+		--><a href="#" class="sign-up">Sign up</a>
+	</div>
+</div>
+
+
+<div class="footer">
+		<div class="div_logo">
+		<a class="logo" href="/">
+		<img src="images/pics1/logo.png" alt="logo" />Invoicer</a>
+		</div><!--
+
+		--><p>&#64;Copyright 2014 Invoicer</p><p>
+		info@invoicer.nl</p><p>
+		06 3487 0104</p>
+		<img class="aery" src="images/footer/Aery.png">
+</div>
+
+
+</body>
+</html>
